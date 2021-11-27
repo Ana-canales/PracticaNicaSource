@@ -1,15 +1,17 @@
-import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import React from "react";
+import { Text, View, Button } from "react-native";
 
+const HomeWork = ({ navigation }) => {
 
-const HomeWork = ({ navigation}) => {
-    return (
-        <View>
-            <Text></Text>
-        </View>
-    )
+  return (
+    <View>
+      <Text>HOLA BEBE</Text>
+        <Button
+          title="REGRESAR"
+          onPress={() => navigation.goBack()}
+        />
+      </View>
+  )
 }
 
 export default HomeWork
-
-const styles = StyleSheet.create({})
