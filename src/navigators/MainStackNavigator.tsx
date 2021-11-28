@@ -11,9 +11,18 @@ const Stack = createNativeStackNavigator();
 const MainStackNavigator = () => {
     return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="LOGIN">
+      <Stack.Navigator initialRouteName="TAREAS">
       <Stack.Screen name="LOGIN" component={Home} />
-      <Stack.Screen name="TAREAS" component={HomeWork} />
+      <Stack.Screen name="TAREAS" component={HomeWork} options={{
+          title: 'My home',
+          headerStyle: {
+            backgroundColor: '#f53d3d',
+          },
+          headerTintColor: '#fff',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
+        }}/>
       <Stack.Screen name="CALCULO" component={Liquidacion} />
       {/* el stack nos mantiene en la pantalla home 
       para que pasemos a otra ventana nos vamos a home y pegamos el codigo en button  */}
