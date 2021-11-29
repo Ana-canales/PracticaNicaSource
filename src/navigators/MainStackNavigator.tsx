@@ -4,6 +4,7 @@ import HomeWork from '../screens/HomeWork';
 import Liquidacion from '../screens/Liquidacion';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import Nica from '../screens/Nica';
 
 
 const Stack = createNativeStackNavigator();
@@ -16,7 +17,18 @@ const MainStackNavigator = () => {
       <Stack.Screen name="TAREAS" component={HomeWork} options={{
           title: 'My home',
           headerStyle: {
-            backgroundColor: '#f53d3d',
+            backgroundColor: '#b2dbd9',
+          },
+          headerTintColor: '#fff',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
+        }}/>
+        <Stack.Screen name="NICA" component={Nica} 
+         options={{
+          title: 'My home',
+          headerStyle: {
+            backgroundColor: '#a2e8',
           },
           headerTintColor: '#fff',
           headerTitleStyle: {
